@@ -9,7 +9,7 @@ class Product extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'tipe' => TipeProduk::class,
+        'tipe' => 'string',
     ];
 
     // Relasi: Produk ini dipakai di banyak pesanan
