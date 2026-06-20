@@ -9,8 +9,8 @@ class Product extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'tipe' => 'string',
-    ];
+    'tipe' => \App\Enums\TipeProduk::class,
+];
 
     // Relasi: Produk ini dipakai di banyak pesanan
     public function orders()

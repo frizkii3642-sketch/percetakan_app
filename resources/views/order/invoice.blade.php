@@ -43,7 +43,7 @@
                     <table class="w-full text-left text-sm">
                         <tr>
                             <th class="py-2 w-1/3">Produk / Layanan</th>
-                            <td class="py-2">: {{ $order->product->nama }} ({{ $order->product->tipe }})</td>
+                            <td class="py-2">: {{ $order->product->nama }} ({{ $order->product->tipe->value }})</td>
                         </tr>
                         
                         @if($order->product->tipe === \App\Enums\TipeProduk::BANNER)
