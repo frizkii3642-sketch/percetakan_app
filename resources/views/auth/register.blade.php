@@ -39,14 +39,17 @@
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
             <x-primary-button class="ms-4">
                 {{ __('Register') }}
             </x-primary-button>
         </div>
+        <div class="mt-6 border-t border-gray-200 pt-4"></div>
+
+    <div class="mt-2 text-center text-sm text-gray-600">
+        Sudah memiliki akun? 
+        <a href="{{ route('login') }}" class="font-semibold text-blue-600 hover:text-blue-500 hover:underline transition-all duration-200">
+        Masuk (Login) di sini
+        </a>
+    </div>
     </form>
 </x-guest-layout>
